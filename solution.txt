@@ -1,0 +1,13 @@
+let input = 'I Love Bangladesh';
+let output = '';
+
+let inputArr = input.split(' ');
+
+inputArr.forEach(element => {
+    let hold = element.split("").reverse().join("");
+    hold = hold.toLowerCase();
+    output += hold[0].toUpperCase() + hold.slice(1);
+    output += " ";
+});
+
+console.log(output);
